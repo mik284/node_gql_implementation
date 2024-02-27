@@ -2,9 +2,9 @@ import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 
 // import db
-import db from "./_db";
+import db from "./_db.js";
 
-import { typeDefs } from "./shema";
+import { typeDefs } from "./shema.js";
 
 const resolvers = {
   Query: {
