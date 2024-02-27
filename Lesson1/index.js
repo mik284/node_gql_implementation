@@ -17,6 +17,15 @@ const resolvers = {
     authors() {
       return db.authors;
     },
+    review(_, args){
+        return db.reviews.find(item=>item.id === args.id)
+    },
+    game(_, args){
+        return db.games.find(item=>item.id === args.id)
+    },
+    author(_, args){
+        return db.authors.find(item=>item.id === args.id)
+    }
   },
 };
 
