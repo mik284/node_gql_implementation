@@ -1,9 +1,18 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
+
+
+
+
+import { typeDefs } from "./shema";
+
+
+
 // server setup
 const server = new ApolloServer({
-// typedefs
-// resolvers
+// typedefs -------definations of types of data to expose #schema
+typeDefs,
+// resolvers ---handle incoming req and return to the client
 })
 
 

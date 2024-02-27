@@ -5,6 +5,9 @@
   "author": "mikey",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "@apollo/server": "^4.10.0",
     "graphql": "^16.8.1"
