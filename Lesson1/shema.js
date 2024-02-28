@@ -10,8 +10,8 @@ type Review{
     rating: Int!
     content: String!
     game_id: Int
-    games: Game!
-    authors: Author!
+    game: Game!
+    author: Author!
 }
 type Author{
     id:ID!
