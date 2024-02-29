@@ -18,7 +18,14 @@ const resolvers = {
       return db.authors;
     },
     review(_, args) {
-      return db.reviews.find((item) => item.id === args.id);
+      console.log(
+        db.reviews.filter(
+          (item) => item.game_id === args.id && item.author_id === args.id
+        )
+      );
+      return db.reviews.filter(
+        (item) => item.game_id === args.id && item.author_id === args.id
+      );
     },
     game(_, args) {
       return db.games.find((item) => item.id === args.id);

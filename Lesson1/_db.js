@@ -20,6 +20,7 @@ let reviews = [
   { id: "5", rating: 8, content: "lorem ipsum", author_id: "2", game_id: "5" },
   { id: "6", rating: 7, content: "lorem ipsum", author_id: "1", game_id: "2" },
   { id: "7", rating: 10, content: "lorem ipsum", author_id: "3", game_id: "1" },
+  { id: "8", rating: 10, content: "lorem ipsum", author_id: "3", game_id: "3" },
 ];
 
 export default { games, authors, reviews };
