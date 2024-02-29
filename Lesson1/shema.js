@@ -9,7 +9,8 @@ type Review{
     id: ID!
     rating: Int!
     content: String!
-    game_id: Int
+    game_id: ID
+    author_id: ID
     game: Game!
     author: Author!
 }
@@ -26,6 +27,9 @@ type Query{
     game(id:ID!):Game
     authors:[Author]
     author(id:ID!):Author
+}
+type Mutation{
+    deleteGame(id:ID!): [Game]
 }
 `;
 
