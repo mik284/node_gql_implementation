@@ -4,7 +4,7 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 // import db
 import db from "./_db.js";
 
-import { typeDefs } from "./shema.js";
+import { typeDefs } from "./schema.js";
 
 const resolvers = {
   Query: {
